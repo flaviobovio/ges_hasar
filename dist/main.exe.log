@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "main.py", line 23, in <module>
+  File "wx\_core.pyc", line 7981, in __init__
+  File "wx\_core.pyc", line 7555, in _BootstrapApp
+  File "main.py", line 12, in OnInit
+  File "licencia.pyc", line 21, in chequear
+NameError: global name 'exit' is not defined

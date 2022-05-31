@@ -1,0 +1,1047 @@
+07/07-10:51:13: Error de comunicaciones con la impresora, Rc -4
+07/07-10:51:19: Error de comunicaciones con la impresora, Rc -4
+07/07-10:51:25: Error de comunicaciones con la impresora, Rc -4
+07/07-10:51:31: Error de comunicaciones con la impresora, Rc -4
+07/07-10:51:37: Error de comunicaciones con la impresora, Rc -4
+07/07-10:51:43: Error de comunicaciones con la impresora, Rc -4
+07/07-10:51:49: Error de comunicaciones con la impresora, Rc -4
+07/07-10:51:55: Error de comunicaciones con la impresora, Rc -4
+07/07-10:52:01: Error de comunicaciones con la impresora, Rc -4
+07/07-10:52:07: Error de comunicaciones con la impresora, Rc -4
+07/07-10:52:13: Error de comunicaciones con la impresora, Rc -4
+07/07-10:52:19: Error de comunicaciones con la impresora, Rc -4
+07/07-10:52:25: Error de comunicaciones con la impresora, Rc -4
+07/07-10:52:33: Comunicaciones OK
+07/07-10:52:33: Comando completado: *
+07/07-10:52:33: Comando completado: *
+07/07-10:52:33: Comando completado: D| |0.0|C|0
+07/07-10:52:33: Comando completado: E
+07/07-10:52:33: Comando completado: J
+07/07-10:52:33: Enviando contenido de PFISIN.TXT
+07/07-10:52:33: Comando completado: b|Bovio Flavio|00000000000|C|C
+07/07-10:52:33: Respuesta: C0800600
+07/07-10:52:34: Comando completado: @|B|T
+07/07-10:52:34: Respuesta: C080360000000017
+07/07-10:52:34: Comando completado: B|Servicio Tecnico|1.0|0.83|21.0|M|0.0|0|b
+07/07-10:52:34: Respuesta: C0803600
+07/07-10:52:35: Comando completado: C|P|Subtotal|0
+07/07-10:52:35: Respuesta: C08036001.0001.000.170.000.000.00
+07/07-10:52:35: Comando completado: D|Efectivo|1.0|T|0
+07/07-10:52:35: Respuesta: C08036000.00
+07/07-10:52:42: Comando completado: E
+07/07-10:52:42: Respuesta: C080060000000017
+07/07-10:52:42: Archivo PFISIN.TXT finalizado
+07/07-10:52:42: Dejando .\PFISIN.ans a disposici¢n del usuario
+07/07-10:52:42: Fin de la operaci¢n con archivo PFISIN.TXT
+07/07-11:05:18: **START SPOOLER**
+07/07-11:05:18: A abrir COM1
+07/07-11:05:18: Comando completado: *
+07/07-11:05:18: Comando completado: *
+07/07-11:05:19: Comando completado: D| |0.0|C|0
+07/07-11:05:19: Comando completado: E
+07/07-11:05:19: Comando completado: J
+07/07-11:05:19: Enviando contenido de pfisin.txt
+07/07-11:05:19: Comando completado: b|Bovio Flavio|00000000000|C|C
+07/07-11:05:19: Respuesta: C0800600
+07/07-11:05:19: Comando completado: ì|1|
+07/07-11:05:19: Respuesta: C0808610
+07/07-11:05:19: Error no recuperable en impresion:
+07/07-11:05:19: Datos no validos en un campo
+07/07-11:05:19: Comando completado: D| |0.0|C|0
+07/07-11:05:19: Comando completado: E
+07/07-11:05:19: Comando completado: J
+07/07-11:07:34: **START SPOOLER**
+07/07-11:07:34: A abrir COM1
+07/07-11:07:34: Comando completado: *
+07/07-11:07:35: Comando completado: *
+07/07-11:07:35: Comando completado: D| |0.0|C|0
+07/07-11:07:35: Comando completado: E
+07/07-11:07:35: Comando completado: J
+07/07-11:07:35: Enviando contenido de pfisin.txt
+07/07-11:07:35: Comando completado: b|Bovio Flavio|00000000000|C|C
+07/07-11:07:35: Respuesta: C0800600
+07/07-11:07:35: Comando completado: ì|1|00000012
+07/07-11:07:35: Respuesta: C0800600
+07/07-11:07:35: Comando completado: Ä|S|T|0
+07/07-11:07:35: Respuesta: C0808620
+07/07-11:07:35: Error no recuperable en impresion:
+07/07-11:07:35: Comando invalido para el estado actual
+07/07-11:07:35: Comando completado: D| |0.0|C|0
+07/07-11:07:35: Comando completado: E
+07/07-11:07:35: Comando completado: J
+07/07-11:16:45: **START SPOOLER**
+07/07-11:16:45: A abrir COM1
+07/07-11:16:45: Comando completado: *
+07/07-11:16:45: Comando completado: *
+07/07-11:16:45: Comando completado: D| |0.0|C|0
+07/07-11:16:46: Comando completado: E
+07/07-11:16:46: Comando completado: J
+07/07-11:16:46: Enviando contenido de pfisin.txt
+07/07-11:16:46: Comando completado: b|Bovio Flavio|00000000000|C|C
+07/07-11:16:46: Respuesta: C0800600
+07/07-11:16:46: Comando completado: ì|1|00000012
+07/07-11:16:46: Respuesta: C0800600
+07/07-11:16:46: Comando completado: Ä|S|T|0
+07/07-11:16:46: Respuesta: C0808620
+07/07-11:16:46: Error no recuperable en impresion:
+07/07-11:16:46: Comando invalido para el estado actual
+07/07-11:16:46: Comando completado: D| |0.0|C|0
+07/07-11:16:46: Comando completado: E
+07/07-11:16:46: Comando completado: J
+07/07-11:29:30: **START SPOOLER**
+07/07-11:29:30: A abrir COM1
+07/07-11:29:30: Comando completado: *
+07/07-11:29:30: Comando completado: *
+07/07-11:29:30: Comando completado: ò
+07/07-11:29:30: Respuesta: C0808620
+07/07-11:29:30: Error no recuperable en impresion:
+07/07-11:29:30: Comando invalido para el estado actual
+07/07-11:39:14: **START SPOOLER**
+07/07-11:39:14: A abrir COM1
+07/07-11:39:14: Comando completado: *
+07/07-11:39:14: Comando completado: *
+07/07-11:39:14: Comando completado: D| |0.0|C|0
+07/07-11:39:14: Comando completado: E
+07/07-11:39:14: Comando completado: J
+07/07-11:39:14: Enviando contenido de pfisin.txt
+07/07-11:39:14: Comando completado: b|Bovio Flavio|00000000000|C|C
+07/07-11:39:14: Respuesta: C0800600
+07/07-11:39:14: Comando completado: ì|1|00000012
+07/07-11:39:14: Respuesta: C0800600
+07/07-11:39:15: Comando completado: Ä|S|T|00587774
+07/07-11:39:15: Respuesta: C0808620
+07/07-11:39:15: Error no recuperable en impresion:
+07/07-11:39:15: Comando invalido para el estado actual
+07/07-11:39:15: Comando completado: D| |0.0|C|0
+07/07-11:39:15: Comando completado: E
+07/07-11:39:15: Comando completado: J
+07/07-11:46:41: **START SPOOLER**
+07/07-11:46:41: A abrir COM1
+07/07-11:46:41: Comando completado: *
+07/07-11:46:42: Comando completado: *
+07/07-11:46:42: Comando completado: D| |0.0|C|0
+07/07-11:46:42: Comando completado: E
+07/07-11:46:42: Comando completado: J
+07/07-11:46:42: Enviando contenido de pfisin.txt
+07/07-11:46:42: Comando completado: b|Bovio Flavio|00000000000|C|C
+07/07-11:46:42: Respuesta: C0800600
+07/07-11:46:42: Comando completado: ì|1|00000012
+07/07-11:46:42: Respuesta: C0800600
+07/07-11:46:42: Comando completado: Ä|S|T|0058778
+07/07-11:46:42: Respuesta: C0808620
+07/07-11:46:42: Error no recuperable en impresion:
+07/07-11:46:42: Comando invalido para el estado actual
+07/07-11:46:42: Comando completado: D| |0.0|C|0
+07/07-11:46:42: Comando completado: E
+07/07-11:46:42: Comando completado: J
+07/07-16:26:31: **START SPOOLER**
+07/07-16:26:31: A abrir COM1
+07/07-16:26:31: No pude abrir COM1
+07/07-18:09:43: **START SPOOLER**
+07/07-18:09:43: A abrir COM1
+07/07-18:09:49: Error de comunicaciones con la impresora, Rc -4
+07/07-18:09:55: Error de comunicaciones con la impresora, Rc -4
+07/07-18:10:01: Error de comunicaciones con la impresora, Rc -4
+07/07-18:10:07: Error de comunicaciones con la impresora, Rc -4
+07/07-18:10:11: Comunicaciones OK
+07/07-18:10:11: Comando completado: *
+07/07-18:10:11: Comando completado: *
+07/07-18:10:11: Comando completado: D| |0.0|C|0
+07/07-18:10:11: Comando completado: E
+07/07-18:10:12: Comando completado: J
+07/07-18:10:12: Enviando contenido de PFISIN.TXT
+07/07-18:10:12: Comando completado: b|Bovio Flavio|00000000000|C|Lascala 750
+07/07-18:10:12: Respuesta: C0808610
+07/07-18:10:12: Error no recuperable en impresion:
+07/07-18:10:12: Datos no validos en un campo
+07/07-18:10:12: Comando completado: D| |0.0|C|0
+07/07-18:10:12: Comando completado: E
+07/07-18:10:12: Comando completado: J
+07/07-18:10:43: **START SPOOLER**
+07/07-18:10:43: A abrir COM1
+07/07-18:10:43: Comando completado: *
+07/07-18:10:43: Comando completado: *
+07/07-18:10:43: Comando completado: D| |0.0|C|0
+07/07-18:10:43: Comando completado: E
+07/07-18:10:43: Comando completado: J
+07/07-18:10:43: Enviando contenido de PFISIN.TXT
+07/07-18:10:44: Comando completado: b|Bovio Flavio|00000000000|C|Lascala 750
+07/07-18:10:44: Respuesta: C0808610
+07/07-18:10:44: Error no recuperable en impresion:
+07/07-18:10:44: Datos no validos en un campo
+07/07-18:10:44: Comando completado: D| |0.0|C|0
+07/07-18:10:44: Comando completado: E
+07/07-18:10:44: Comando completado: J
+07/07-18:14:57: **START SPOOLER**
+07/07-18:14:57: A abrir COM1
+07/07-18:14:57: Comando completado: *
+07/07-18:14:57: Comando completado: *
+07/07-18:14:57: Comando completado: D| |0.0|C|0
+07/07-18:14:57: Comando completado: E
+07/07-18:14:57: Comando completado: J
+07/07-18:14:57: Enviando contenido de pfisin.txt
+07/07-18:14:58: Comando completado: b|Bovio Flavio|00000000000|C|Lascala 750
+07/07-18:14:58: Respuesta: C0808610
+07/07-18:14:58: Error no recuperable en impresion:
+07/07-18:14:58: Datos no validos en un campo
+07/07-18:14:58: Comando completado: D| |0.0|C|0
+07/07-18:14:58: Comando completado: E
+07/07-18:14:58: Comando completado: J
+07/07-18:15:50: **START SPOOLER**
+07/07-18:15:50: A abrir COM1
+07/07-18:15:50: Comando completado: *
+07/07-18:15:50: Comando completado: *
+07/07-18:15:50: Comando completado: D| |0.0|C|0
+07/07-18:15:51: Comando completado: E
+07/07-18:15:51: Comando completado: J
+07/07-18:15:51: Enviando contenido de pfisin.txt
+07/07-18:15:51: Comando completado: b|Bovio Flavio|00000000000|C|Lascala 750
+07/07-18:15:51: Respuesta: C0808610
+07/07-18:15:51: Error no recuperable en impresion:
+07/07-18:15:51: Datos no validos en un campo
+07/07-18:15:51: Comando completado: D| |0.0|C|0
+07/07-18:15:51: Comando completado: E
+07/07-18:15:51: Comando completado: J
+07/07-18:16:30: **START SPOOLER**
+07/07-18:16:30: A abrir COM1
+07/07-18:16:30: Comando completado: *
+07/07-18:16:30: Comando completado: *
+07/07-18:16:30: Comando completado: D| |0.0|C|0
+07/07-18:16:30: Comando completado: E
+07/07-18:16:30: Comando completado: J
+07/07-18:16:30: Enviando contenido de pfisin.txt
+07/07-18:16:30: Comando completado: b|Bovio Flavio|00000000000|C|Lascala 750
+07/07-18:16:30: Respuesta: C0808610
+07/07-18:16:30: Error no recuperable en impresion:
+07/07-18:16:30: Datos no validos en un campo
+07/07-18:16:30: Comando completado: D| |0.0|C|0
+07/07-18:16:30: Comando completado: E
+07/07-18:16:30: Comando completado: J
+07/07-18:17:06: **START SPOOLER**
+07/07-18:17:06: A abrir COM1
+07/07-18:17:06: Comando completado: *
+07/07-18:17:06: Comando completado: *
+07/07-18:17:06: Comando completado: D| |0.0|C|0
+07/07-18:17:06: Comando completado: E
+07/07-18:17:06: Comando completado: J
+07/07-18:17:06: Enviando contenido de pfisin.txt
+07/07-18:17:06: Comando completado: b|Bovio Flavio|00000000000|C|Lascala 750
+07/07-18:17:06: Respuesta: C0808610
+07/07-18:17:06: Error no recuperable en impresion:
+07/07-18:17:06: Datos no validos en un campo
+07/07-18:17:06: Comando completado: D| |0.0|C|0
+07/07-18:17:06: Comando completado: E
+07/07-18:17:07: Comando completado: J
+10/07-12:19:07: **START SPOOLER**
+10/07-12:19:07: A abrir COM1
+10/07-12:19:07: Comando completado: *
+10/07-12:19:07: Comando completado: *
+10/07-12:19:07: Comando completado: D| |0.0|C|0
+10/07-12:19:07: Comando completado: E
+10/07-12:19:08: Comando completado: J
+10/07-12:19:08: Enviando contenido de PFISIN.TXT
+10/07-12:19:08: Comando completado: b|Bovio Flavio|00000000000|C|C
+10/07-12:19:08: Respuesta: 00808610Campo de datos inv·lido
+10/07-12:19:08: Error no recuperable en impresion:
+10/07-12:19:08: Datos no validos en un campo
+10/07-12:19:08: Comando completado: D| |0.0|C|0
+10/07-12:19:08: Comando completado: E
+10/07-12:19:08: Comando completado: J
+10/07-12:36:15: **START SPOOLER**
+10/07-12:36:15: A abrir COM1
+10/07-12:36:15: No pude abrir COM1
+10/07-12:37:00: **START SPOOLER**
+10/07-12:37:00: A abrir COM1
+10/07-12:37:00: No pude abrir COM1
+10/07-12:38:47: **START SPOOLER**
+10/07-12:38:47: A abrir COM1
+10/07-12:38:47: No pude abrir COM1
+10/07-12:39:11: **START SPOOLER**
+10/07-12:39:11: A abrir COM1
+10/07-12:39:11: Comando completado: *
+10/07-12:39:11: Comando completado: *
+10/07-12:39:11: Comando completado: D| |0.0|C|0
+10/07-12:39:11: Comando completado: E
+10/07-12:39:11: Comando completado: J
+10/07-12:39:11: Error abriendo psifin.txt, errno 2
+10/07-12:39:33: **START SPOOLER**
+10/07-12:39:33: A abrir COM1
+10/07-12:39:33: Comando completado: *
+10/07-12:39:33: Comando completado: *
+10/07-12:39:33: Comando completado: D| |0.0|C|0
+10/07-12:39:33: Comando completado: E
+10/07-12:39:33: Comando completado: J
+10/07-12:39:33: Enviando contenido de PFISIN.TXT
+10/07-12:39:33: Comando completado: b|Bovio Flavio|00000000000|C|C|Lascala 750
+10/07-12:39:33: Respuesta: 00800600
+10/07-12:39:33: Comando completado: ì|1|00000000
+10/07-12:39:33: Respuesta: 00800600
+10/07-12:39:33: Comando completado: S|T|0
+10/07-12:39:33: Respuesta: 00808608Comando no reconocido
+10/07-12:39:33: Error no recuperable en impresion:
+10/07-12:39:33: Comando desconocido
+10/07-12:39:33: Comando completado: D| |0.0|C|0
+10/07-12:39:33: Comando completado: E
+10/07-12:39:33: Comando completado: J
+10/07-12:45:51: **START SPOOLER**
+10/07-12:45:51: A abrir COM1
+10/07-12:45:51: Comando completado: *
+10/07-12:45:51: Comando completado: *
+10/07-12:45:51: Comando completado: D| |0.0|C|0
+10/07-12:45:51: Comando completado: E
+10/07-12:45:51: Comando completado: J
+10/07-12:45:51: Error abriendo psifin.txt, errno 2
+10/07-12:46:29: **START SPOOLER**
+10/07-12:46:29: A abrir COM1
+10/07-12:46:29: Comando completado: *
+10/07-12:46:29: Comando completado: *
+10/07-12:46:29: Comando completado: D| |0.0|C|0
+10/07-12:46:29: Comando completado: E
+10/07-12:46:29: Comando completado: J
+10/07-12:46:29: Enviando contenido de pfisin.txt
+10/07-12:46:29: Comando completado: B|Servicio Tecnico|1.0|0.83|21.0|M|0.0|0|b
+10/07-12:46:29: Respuesta: 00808620No existe un comprobante fiscal abierto
+10/07-12:46:29: Error no recuperable en impresion:
+10/07-12:46:29: Comando invalido para el estado actual
+10/07-12:46:29: Comando completado: D| |0.0|C|0
+10/07-12:46:29: Comando completado: E
+10/07-12:46:29: Comando completado: J
+10/07-12:53:27: **START SPOOLER**
+10/07-12:53:27: A abrir COM1
+10/07-12:53:27: Comando completado: *
+10/07-12:53:27: Comando completado: *
+10/07-12:53:27: Comando completado: D| |0.0|C|0
+10/07-12:53:27: Comando completado: E
+10/07-12:53:27: Comando completado: J
+10/07-12:53:27: Enviando contenido de PFISIN.TXT
+10/07-12:53:27: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+10/07-12:53:27: Respuesta: 00800600
+10/07-12:53:27: Comando completado: ì|1|00000000
+10/07-12:53:27: Respuesta: 00800600
+10/07-12:53:27: Comando completado: Ä|R|T|0
+10/07-12:53:27: Respuesta: 00808610Campo de datos inv·lido
+10/07-12:53:27: Error no recuperable en impresion:
+10/07-12:53:27: Datos no validos en un campo
+10/07-12:53:27: Comando completado: D| |0.0|C|0
+10/07-12:53:27: Comando completado: E
+10/07-12:53:27: Comando completado: J
+10/07-12:59:15: **START SPOOLER**
+10/07-12:59:15: A abrir COM1
+10/07-12:59:15: Comando completado: *
+10/07-12:59:15: Comando completado: *
+10/07-12:59:15: Comando completado: D| |0.0|C|0
+10/07-12:59:15: Comando completado: E
+10/07-12:59:15: Comando completado: J
+10/07-12:59:15: Enviando contenido de PFISIN.TXT
+10/07-12:59:15: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+10/07-12:59:15: Respuesta: 00800600
+10/07-12:59:15: Comando completado: ì|1|00000015
+10/07-12:59:15: Respuesta: 00800600
+10/07-12:59:15: Comando completado: Ä|R|T
+10/07-12:59:15: Respuesta: 008036001
+10/07-12:59:16: Comando completado: B|Servicio Tecnico|1.0|16.53|21.0|M|0.0|0|b
+10/07-12:59:16: Respuesta: 00803600
+10/07-12:59:16: Comando completado: Å
+10/07-12:59:16: Respuesta: 008006001
+10/07-12:59:16: Archivo PFISIN.TXT finalizado
+10/07-12:59:16: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-12:59:16: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-13:02:03: **START SPOOLER**
+10/07-13:02:03: A abrir COM1
+10/07-13:02:03: Comando completado: *
+10/07-13:02:03: Comando completado: *
+10/07-13:02:03: Comando completado: D| |0.0|C|0
+10/07-13:02:03: Comando completado: E
+10/07-13:02:03: Comando completado: J
+10/07-13:02:04: Enviando contenido de PFISIN.TXT
+10/07-13:02:04: Comando completado: b|Bovio Flavio|00000000000|C|C|Lascala 750
+10/07-13:02:04: Respuesta: 00800600
+10/07-13:02:04: Comando completado: ì|1|00000000
+10/07-13:02:04: Respuesta: 00800600
+10/07-13:02:04: Comando completado: Ä|S|T
+10/07-13:02:04: Respuesta: 008036001
+10/07-13:02:04: Comando completado: B|Servicio Tecnico|1.0|82.64|21.0|M|0.0|0|b
+10/07-13:02:04: Respuesta: 00803600
+10/07-13:02:04: Comando completado: Å
+10/07-13:02:04: Respuesta: 008006001
+10/07-13:02:04: Archivo PFISIN.TXT finalizado
+10/07-13:02:04: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-13:02:04: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-13:03:53: **START SPOOLER**
+10/07-13:03:53: A abrir COM1
+10/07-13:03:53: Comando completado: *
+10/07-13:03:53: Comando completado: *
+10/07-13:03:53: Comando completado: D| |0.0|C|0
+10/07-13:03:53: Comando completado: E
+10/07-13:03:53: Comando completado: J
+10/07-13:03:53: Enviando contenido de PFISIN.TXT
+10/07-13:03:53: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+10/07-13:03:53: Respuesta: 00800600
+10/07-13:03:53: Comando completado: ì|1|00000000
+10/07-13:03:53: Respuesta: 00800600
+10/07-13:03:53: Comando completado: Ä|R|T
+10/07-13:03:53: Respuesta: 008036002
+10/07-13:03:53: Comando completado: B|Servicio Tecnico|1.0|50.0|21.0|M|0.0|0|b
+10/07-13:03:53: Respuesta: 00803600
+10/07-13:03:53: Comando completado: Å
+10/07-13:03:53: Respuesta: 008006002
+10/07-13:03:53: Archivo PFISIN.TXT finalizado
+10/07-13:03:53: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-13:03:53: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-13:06:28: **START SPOOLER**
+10/07-13:06:28: A abrir COM1
+10/07-13:06:28: Comando completado: *
+10/07-13:06:28: Comando completado: *
+10/07-13:06:28: Comando completado: D| |0.0|C|0
+10/07-13:06:28: Comando completado: E
+10/07-13:06:28: Comando completado: J
+10/07-13:06:28: Enviando contenido de PFISIN.TXT
+10/07-13:06:28: Comando completado: b|Bovio Flavio|00000000000|C|C|Lascala 750
+10/07-13:06:28: Respuesta: 00800600
+10/07-13:06:28: Comando completado: ì|1|00000013
+10/07-13:06:28: Respuesta: 00800600
+10/07-13:06:28: Comando completado: Ä|S|T
+10/07-13:06:28: Respuesta: 008036002
+10/07-13:06:28: Comando completado: B|Servicio Tecnico|1.0|60.0|21.0|M|0.0|0|b
+10/07-13:06:28: Respuesta: 00803600
+10/07-13:06:28: Comando completado: C|P|Subtotal|0
+10/07-13:06:28: Respuesta: 00803600160.00010.4130.0000.0000.000
+10/07-13:06:28: Comando completado: Å
+10/07-13:06:28: Respuesta: 008006002
+10/07-13:06:28: Archivo PFISIN.TXT finalizado
+10/07-13:06:28: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-13:06:28: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-13:26:43: **START SPOOLER**
+10/07-13:26:43: A abrir COM1
+10/07-13:26:43: Comando completado: *
+10/07-13:26:43: Comando completado: *
+10/07-13:26:43: Comando completado: D| |0.0|C|0
+10/07-13:26:43: Comando completado: E
+10/07-13:26:43: Comando completado: J
+10/07-13:26:43: Enviando contenido de PFISIN.TXT
+10/07-13:26:43: Comando completado: b|Bovio Flavio|00000000000|C|2|Lascala 750
+10/07-13:26:43: Respuesta: 00800600
+10/07-13:26:43: Comando completado: @|B|T
+10/07-13:26:43: Respuesta: 008036001
+10/07-13:26:43: Comando completado: B|Servicio Tecnico|1.0|330.58|21.0|M|0.0|0|b
+10/07-13:26:43: Respuesta: 00803600
+10/07-13:26:43: Comando completado: C|P|Subtotal|0
+10/07-13:26:43: Respuesta: 008036001330.58057.3730.0000.0000.000
+10/07-13:26:43: Comando completado: D|Efectivo|400.0|T|0
+10/07-13:26:43: Respuesta: 00803600-69.42
+10/07-13:26:43: Comando completado: E
+10/07-13:26:43: Respuesta: 008006001
+10/07-13:26:43: Archivo PFISIN.TXT finalizado
+10/07-13:26:43: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-13:26:43: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-13:28:18: **START SPOOLER**
+10/07-13:28:18: A abrir COM1
+10/07-13:28:18: Comando completado: *
+10/07-13:28:18: Comando completado: *
+10/07-13:28:18: Comando completado: D| |0.0|C|0
+10/07-13:28:18: Comando completado: E
+10/07-13:28:18: Comando completado: J
+10/07-13:28:18: Enviando contenido de PFISIN.TXT
+10/07-13:28:18: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+10/07-13:28:18: Respuesta: 00800600
+10/07-13:28:18: Comando completado: @|A|T
+10/07-13:28:18: Respuesta: 008036001
+10/07-13:28:18: Comando completado: B|Servicio Tecnico|1.0|165.29|21.0|M|0.0|0|b
+10/07-13:28:18: Respuesta: 00803600
+10/07-13:28:18: Comando completado: C|P|Subtotal|0
+10/07-13:28:18: Respuesta: 008036001165.29028.6870.0000.0000.000
+10/07-13:28:18: Comando completado: D|Efectivo|200.0|T|0
+10/07-13:28:18: Respuesta: 00803600-34.71
+10/07-13:28:18: Comando completado: E
+10/07-13:28:18: Respuesta: 008006001
+10/07-13:28:18: Archivo PFISIN.TXT finalizado
+10/07-13:28:18: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-13:28:18: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-17:09:16: **START SPOOLER**
+10/07-17:09:16: A abrir COM1
+10/07-17:09:16: Comando completado: *
+10/07-17:09:16: Comando completado: *
+10/07-17:09:16: Comando completado: D| |0.0|C|0
+10/07-17:09:16: Comando completado: E
+10/07-17:09:16: Comando completado: J
+10/07-17:09:16: Enviando contenido de PFISIN.TXT
+10/07-17:09:16: Comando completado: Ys
+10/07-17:09:16: Respuesta: 00800600140710170916
+10/07-17:09:16: Archivo PFISIN.TXT finalizado
+10/07-17:09:16: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-17:09:16: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-17:09:47: **START SPOOLER**
+10/07-17:09:47: A abrir COM1
+10/07-17:09:47: Comando completado: *
+10/07-17:09:47: Comando completado: *
+10/07-17:09:47: Comando completado: D| |0.0|C|0
+10/07-17:09:47: Comando completado: E
+10/07-17:09:47: Comando completado: J
+10/07-17:09:47: Enviando contenido de PFISIN.TXT
+10/07-17:09:47: Comando completado: Ys
+10/07-17:09:47: Respuesta: 00800600140710170947
+10/07-17:09:47: Archivo PFISIN.TXT finalizado
+10/07-17:09:47: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-17:09:47: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-17:10:11: **START SPOOLER**
+10/07-17:10:11: A abrir COM1
+10/07-17:10:11: Comando completado: *
+10/07-17:10:11: Comando completado: *
+10/07-17:10:11: Comando completado: D| |0.0|C|0
+10/07-17:10:11: Comando completado: E
+10/07-17:10:11: Comando completado: J
+10/07-17:10:11: Enviando contenido de PFISIN.TXT
+10/07-17:10:11: Comando completado: Y
+10/07-17:10:11: Respuesta: 00800600140710171011
+10/07-17:10:11: Archivo PFISIN.TXT finalizado
+10/07-17:10:11: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-17:10:11: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-17:10:53: **START SPOOLER**
+10/07-17:10:53: A abrir COM1
+10/07-17:10:53: Comando completado: *
+10/07-17:10:53: Comando completado: *
+10/07-17:10:53: Comando completado: D| |0.0|C|0
+10/07-17:10:53: Comando completado: E
+10/07-17:10:53: Comando completado: J
+10/07-17:10:53: Enviando contenido de PFISIN.TXT
+10/07-17:10:53: Comando completado: Y
+10/07-17:10:53: Respuesta: 00800600140710171053
+10/07-17:10:53: Archivo PFISIN.TXT finalizado
+10/07-17:10:53: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-17:10:53: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-17:12:10: **START SPOOLER**
+10/07-17:12:10: A abrir COM1
+10/07-17:12:10: Comando completado: *
+10/07-17:12:10: Comando completado: *
+10/07-17:12:10: Comando completado: D| |0.0|C|0
+10/07-17:12:10: Comando completado: E
+10/07-17:12:10: Comando completado: J
+10/07-17:12:10: Enviando contenido de PFISIN.TXT
+10/07-17:12:10: Comando completado: s
+10/07-17:12:10: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:12:10: Archivo PFISIN.TXT finalizado
+10/07-17:12:10: Dejando .\PFISIN.ans a disposici¢n del usuario
+10/07-17:12:10: Fin de la operaci¢n con archivo PFISIN.TXT
+10/07-17:13:44: **START SPOOLER**
+10/07-17:13:44: A abrir COM1
+10/07-17:13:44: Comando completado: *
+10/07-17:13:44: Comando completado: *
+10/07-17:13:44: Comando completado: Y
+10/07-17:13:44: Respuesta: 00800600140710171344
+10/07-17:14:17: **START SPOOLER**
+10/07-17:14:17: A abrir COM1
+10/07-17:14:17: Comando completado: *
+10/07-17:14:17: Comando completado: *
+10/07-17:14:17: Comando completado: s
+10/07-17:14:17: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:20:14: **START SPOOLER**
+10/07-17:20:14: A abrir COM1
+10/07-17:20:14: Comando completado: *
+10/07-17:20:14: Comando completado: *
+10/07-17:20:14: Comando completado: -a
+10/07-17:20:14: Respuesta: 00808608Comando no reconocido
+10/07-17:20:14: Error no recuperable en impresion:
+10/07-17:20:14: Comando desconocido
+10/07-17:20:26: **START SPOOLER**
+10/07-17:20:26: A abrir COM1
+10/07-17:20:26: Comando completado: *
+10/07-17:20:26: Comando completado: *
+10/07-17:20:26: Comando completado: Y
+10/07-17:20:26: Respuesta: 00800600140710172026
+10/07-17:20:26: rename: error abriendo archivo de salida, errno 2
+10/07-17:20:43: **START SPOOLER**
+10/07-17:20:43: A abrir COM1
+10/07-17:20:43: Comando completado: *
+10/07-17:20:43: Comando completado: *
+10/07-17:20:43: Comando completado: Y
+10/07-17:20:43: Respuesta: 00800600140710172043
+10/07-17:20:43: rename: error abriendo archivo de salida, errno 2
+10/07-17:27:02: **START SPOOLER**
+10/07-17:27:02: A abrir COM1
+10/07-17:27:02: Comando completado: *
+10/07-17:27:02: Comando completado: *
+10/07-17:27:02: Comando completado: Y
+10/07-17:27:02: Respuesta: 00800600140710172702
+10/07-17:27:02: **START SPOOLER**
+10/07-17:27:02: A abrir COM1
+10/07-17:27:02: Comando completado: *
+10/07-17:27:02: Comando completado: *
+10/07-17:27:02: Comando completado: s
+10/07-17:27:02: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:27:33: **START SPOOLER**
+10/07-17:27:33: A abrir COM1
+10/07-17:27:33: Comando completado: *
+10/07-17:27:33: Comando completado: *
+10/07-17:27:33: Comando completado: Y
+10/07-17:27:33: Respuesta: 00800600140710172733
+10/07-17:27:33: **START SPOOLER**
+10/07-17:27:33: A abrir COM1
+10/07-17:27:33: Comando completado: *
+10/07-17:27:33: Comando completado: *
+10/07-17:27:33: Comando completado: s
+10/07-17:27:33: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:28:12: **START SPOOLER**
+10/07-17:28:12: A abrir COM1
+10/07-17:28:12: Comando completado: *
+10/07-17:28:12: Comando completado: *
+10/07-17:28:13: Comando completado: Y
+10/07-17:28:13: Respuesta: 00800600140710172812
+10/07-17:28:13: **START SPOOLER**
+10/07-17:28:13: A abrir COM1
+10/07-17:28:13: Comando completado: *
+10/07-17:28:13: Comando completado: *
+10/07-17:28:13: Comando completado: s
+10/07-17:28:13: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:29:39: **START SPOOLER**
+10/07-17:29:39: A abrir COM1
+10/07-17:29:39: Comando completado: *
+10/07-17:29:39: Comando completado: *
+10/07-17:29:39: Comando completado: Y
+10/07-17:29:39: Respuesta: 00800600140710172939
+10/07-17:29:39: **START SPOOLER**
+10/07-17:29:39: A abrir COM1
+10/07-17:29:39: Comando completado: *
+10/07-17:29:39: Comando completado: *
+10/07-17:29:39: Comando completado: s
+10/07-17:29:39: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:33:38: **START SPOOLER**
+10/07-17:33:38: A abrir COM1
+10/07-17:33:38: Comando completado: *
+10/07-17:33:38: Comando completado: *
+10/07-17:33:38: Comando completado: Y
+10/07-17:33:38: Respuesta: 00800600140710173338
+10/07-17:33:38: **START SPOOLER**
+10/07-17:33:38: A abrir COM1
+10/07-17:33:38: Comando completado: *
+10/07-17:33:38: Comando completado: *
+10/07-17:33:38: Comando completado: s
+10/07-17:33:38: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:33:55: **START SPOOLER**
+10/07-17:33:55: A abrir COM1
+10/07-17:33:55: Comando completado: *
+10/07-17:33:55: Comando completado: *
+10/07-17:33:55: Comando completado: Y
+10/07-17:33:55: Respuesta: 00800600140710173355
+10/07-17:33:56: **START SPOOLER**
+10/07-17:33:56: A abrir COM1
+10/07-17:33:56: Comando completado: *
+10/07-17:33:56: Comando completado: *
+10/07-17:33:56: Comando completado: s
+10/07-17:33:56: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+10/07-17:34:22: **START SPOOLER**
+10/07-17:34:22: A abrir COM1
+10/07-17:34:22: Comando completado: *
+10/07-17:34:22: Comando completado: *
+10/07-17:34:22: Comando completado: Y
+10/07-17:34:22: Respuesta: 00800600140710173422
+10/07-17:34:23: **START SPOOLER**
+10/07-17:34:23: A abrir COM1
+10/07-17:34:23: Comando completado: *
+10/07-17:34:23: Comando completado: *
+10/07-17:34:23: Comando completado: s
+10/07-17:34:23: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+11/07-10:39:07: **START SPOOLER**
+11/07-10:39:07: A abrir COM1
+11/07-10:39:07: Comando completado: *
+11/07-10:39:07: Comando completado: *
+11/07-10:39:07: Comando completado: D| |0.0|C|0
+11/07-10:39:07: Comando completado: E
+11/07-10:39:07: Comando completado: J
+11/07-10:39:07: Enviando contenido de PFISIN.TXT
+11/07-10:39:07: Comando completado: b|Bovio Flavio|00000000000|C|2|Lascala 750
+11/07-10:39:07: Respuesta: 00800600
+11/07-10:39:07: Comando completado: @|B|T
+11/07-10:39:07: Respuesta: 008036001
+11/07-10:39:07: Comando completado: B|Servicio Tecnico|1.0|20.0|21.0|M|0.0|0|T
+11/07-10:39:07: Respuesta: 00803600
+11/07-10:39:07: Comando completado: C|P|Subtotal|0
+11/07-10:39:07: Respuesta: 00803600120.0003.4710.0000.0000.000
+11/07-10:39:07: Comando completado: D|Efectivo|20.0|T|0
+11/07-10:39:07: Respuesta: 00803600+0.00
+11/07-10:39:07: Comando completado: E
+11/07-10:39:07: Respuesta: 008006001
+11/07-10:39:07: Archivo PFISIN.TXT finalizado
+11/07-10:39:07: Dejando .\PFISIN.ans a disposici¢n del usuario
+11/07-10:39:07: Fin de la operaci¢n con archivo PFISIN.TXT
+11/07-10:40:35: **START SPOOLER**
+11/07-10:40:35: A abrir COM1
+11/07-10:40:35: Comando completado: *
+11/07-10:40:35: Comando completado: *
+11/07-10:40:35: Comando completado: D| |0.0|C|0
+11/07-10:40:35: Comando completado: E
+11/07-10:40:35: Comando completado: J
+11/07-10:40:35: Enviando contenido de PFISIN.TXT
+11/07-10:40:35: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+11/07-10:40:35: Respuesta: 00800600
+11/07-10:40:35: Comando completado: ì|1|00000000
+11/07-10:40:35: Respuesta: 00800600
+11/07-10:40:35: Comando completado: Ä|R|T
+11/07-10:40:35: Respuesta: 008036001
+11/07-10:40:35: Comando completado: B|Servicio Tecnico|1.0|300.0|21.0|M|0.0|0|T
+11/07-10:40:35: Respuesta: 00803600
+11/07-10:40:35: Comando completado: Å
+11/07-10:40:35: Respuesta: 008006001
+11/07-10:40:35: Archivo PFISIN.TXT finalizado
+11/07-10:40:35: Dejando .\PFISIN.ans a disposici¢n del usuario
+11/07-10:40:35: Fin de la operaci¢n con archivo PFISIN.TXT
+11/07-10:41:15: **START SPOOLER**
+11/07-10:41:15: A abrir COM1
+11/07-10:41:15: Comando completado: *
+11/07-10:41:15: Comando completado: *
+11/07-10:41:15: Comando completado: D| |0.0|C|0
+11/07-10:41:15: Comando completado: E
+11/07-10:41:15: Comando completado: J
+11/07-10:41:15: Enviando contenido de PFISIN.TXT
+11/07-10:41:15: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+11/07-10:41:15: Respuesta: 00800600
+11/07-10:41:15: Comando completado: @|A|T
+11/07-10:41:15: Respuesta: 008036001
+11/07-10:41:15: Comando completado: B|Servicio Tecnico|1.0|100.0|21.0|M|0.0|0|T
+11/07-10:41:15: Respuesta: 00803600
+11/07-10:41:15: Comando completado: C|P|Subtotal|0
+11/07-10:41:15: Respuesta: 008036001100.00017.3550.0000.0000.000
+11/07-10:41:15: Comando completado: D|Efectivo|100.0|T|0
+11/07-10:41:15: Respuesta: 00803600+0.00
+11/07-10:41:15: Comando completado: E
+11/07-10:41:15: Respuesta: 008006001
+11/07-10:41:15: Archivo PFISIN.TXT finalizado
+11/07-10:41:15: Dejando .\PFISIN.ans a disposici¢n del usuario
+11/07-10:41:15: Fin de la operaci¢n con archivo PFISIN.TXT
+11/07-11:14:27: **START SPOOLER**
+11/07-11:14:27: A abrir COM1
+11/07-11:14:28: Comando completado: *
+11/07-11:14:28: Comando completado: *
+11/07-11:14:28: Comando completado: D| |0.0|C|0
+11/07-11:14:28: Comando completado: E
+11/07-11:14:28: Comando completado: J
+11/07-11:14:28: Enviando contenido de PFISIN.TXT
+11/07-11:14:28: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+11/07-11:14:28: Respuesta: 00800600
+11/07-11:14:28: Comando completado: @|A|T
+11/07-11:14:28: Respuesta: 008036002
+11/07-11:14:28: Comando completado: B|Servicio Tecnico|1.0|20.0|21.0|M|0.0|0|T
+11/07-11:14:28: Respuesta: 00803600
+11/07-11:14:28: Comando completado: A|Oferta del dia|0
+11/07-11:14:28: Respuesta: 00803600
+11/07-11:14:28: Comando completado: C|P|Subtotal|0
+11/07-11:14:28: Respuesta: 00803600120.0003.4710.0000.0000.000
+11/07-11:14:28: Comando completado: D|Efectivo|20.0|T|0
+11/07-11:14:28: Respuesta: 00803600+0.00
+11/07-11:14:28: Comando completado: E
+11/07-11:14:28: Respuesta: 008006002
+11/07-11:14:28: Archivo PFISIN.TXT finalizado
+11/07-11:14:28: Dejando .\PFISIN.ans a disposici¢n del usuario
+11/07-11:14:28: Fin de la operaci¢n con archivo PFISIN.TXT
+11/07-12:00:02: **START SPOOLER**
+11/07-12:00:02: A abrir COM1
+11/07-12:00:02: Comando completado: *
+11/07-12:00:02: Comando completado: *
+11/07-12:00:02: Comando completado: D| |0.0|C|0
+11/07-12:00:02: Comando completado: E
+11/07-12:00:02: Comando completado: J
+11/07-12:00:02: Enviando contenido de PFISIN.TXT
+11/07-12:00:02: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+11/07-12:00:02: Respuesta: 00800600
+11/07-12:00:02: Comando completado: @|A|T
+11/07-12:00:02: Respuesta: 008036003
+11/07-12:00:03: Comando completado: B|Servicio Tecnico|1.0|1.0|21.0|M|0.0|0|T
+11/07-12:00:03: Respuesta: 00803600
+11/07-12:00:03: Comando completado: A|devolucin ddd|0
+11/07-12:00:03: Respuesta: 00803600
+11/07-12:00:03: Comando completado: C|P|Subtotal|0
+11/07-12:00:03: Respuesta: 0080360011.0000.1740.0000.0000.000
+11/07-12:00:03: Comando completado: D|Efectivo|1.0|T|0
+11/07-12:00:03: Respuesta: 00803600+0.00
+11/07-12:00:03: Comando completado: E
+11/07-12:00:03: Respuesta: 008006003
+11/07-12:00:03: Archivo PFISIN.TXT finalizado
+11/07-12:00:03: Dejando .\PFISIN.ans a disposici¢n del usuario
+11/07-12:00:03: Fin de la operaci¢n con archivo PFISIN.TXT
+11/07-12:05:08: **START SPOOLER**
+11/07-12:05:08: A abrir COM1
+11/07-12:05:08: Comando completado: *
+11/07-12:05:08: Comando completado: *
+11/07-12:05:08: Comando completado: D| |0.0|C|0
+11/07-12:05:08: Comando completado: E
+11/07-12:05:08: Comando completado: J
+11/07-12:05:08: Enviando contenido de PFISIN.TXT
+11/07-12:05:08: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+11/07-12:05:08: Respuesta: 00800600
+11/07-12:05:08: Comando completado: @|A|T
+11/07-12:05:08: Respuesta: 008036004
+11/07-12:05:08: Comando completado: B|Servicio Tecnico|1.0|50.0|21.0|M|0.0|0|T
+11/07-12:05:08: Respuesta: 00803600
+11/07-12:05:08: Comando completado: A|nada que observar|0
+11/07-12:05:08: Respuesta: 00803600
+11/07-12:05:08: Comando completado: C|P|Subtotal|0
+11/07-12:05:08: Respuesta: 00803600150.0008.6780.0000.0000.000
+11/07-12:05:08: Comando completado: D|Efectivo|50.0|T|0
+11/07-12:05:08: Respuesta: 00803600+0.00
+11/07-12:05:08: Comando completado: E
+11/07-12:05:08: Respuesta: 008006004
+11/07-12:05:08: Archivo PFISIN.TXT finalizado
+11/07-12:05:08: Dejando .\PFISIN.ans a disposici¢n del usuario
+11/07-12:05:08: Fin de la operaci¢n con archivo PFISIN.TXT
+11/07-17:00:51: **START SPOOLER**
+11/07-17:00:51: A abrir COM1
+11/07-17:00:51: Comando completado: *
+11/07-17:00:51: Comando completado: *
+11/07-17:00:51: Comando completado: D| |0.0|C|0
+11/07-17:00:51: Comando completado: E
+11/07-17:00:51: Comando completado: J
+11/07-17:00:51: Enviando contenido de PFISIN.TXT
+11/07-17:00:51: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+11/07-17:00:51: Respuesta: 00800600
+11/07-17:00:51: Comando completado: ì|1|00000000
+11/07-17:00:51: Respuesta: 00800600
+11/07-17:00:51: Comando completado: Ä|R|T
+11/07-17:00:51: Respuesta: 008036001
+11/07-17:00:51: Comando completado: B|Servicio Tecnico|1.0|2.0|21.0|M|0.0|0|T
+11/07-17:00:51: Respuesta: 00803600
+11/07-17:00:51: Comando completado: A|descuento x por pago contado|0
+11/07-17:00:51: Respuesta: 00803600
+11/07-17:00:51: Comando completado: Å
+11/07-17:00:51: Respuesta: 008006001
+11/07-17:00:51: Archivo PFISIN.TXT finalizado
+11/07-17:00:51: Dejando .\PFISIN.ans a disposici¢n del usuario
+11/07-17:00:51: Fin de la operaci¢n con archivo PFISIN.TXT
+12/07-10:47:25: **START SPOOLER**
+12/07-10:47:25: A abrir COM1
+12/07-10:47:25: Comando completado: *
+12/07-10:47:25: Comando completado: *
+12/07-10:47:25: Comando completado: D| |0.0|C|0
+12/07-10:47:25: Comando completado: E
+12/07-10:47:25: Comando completado: J
+12/07-10:47:25: Enviando contenido de PFISIN.TXT
+12/07-10:47:25: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+12/07-10:47:25: Respuesta: 00800600
+12/07-10:47:25: Comando completado: ì|1|00000000
+12/07-10:47:25: Respuesta: 00800600
+12/07-10:47:25: Comando completado: Ä|R|T
+12/07-10:47:25: Respuesta: 008036001
+12/07-10:47:25: Comando completado: B|Servicio Tecnico|1.0|5.0|21.0|M|0.0|0|T
+12/07-10:47:25: Respuesta: 00803600
+12/07-10:47:25: Comando completado: A|devoluci¢n|0
+12/07-10:47:25: Respuesta: 00803600
+12/07-10:47:25: Comando completado: Å
+12/07-10:47:25: Respuesta: 008006001
+12/07-10:47:25: Archivo PFISIN.TXT finalizado
+12/07-10:47:25: Dejando .\PFISIN.ans a disposici¢n del usuario
+12/07-10:47:25: Fin de la operaci¢n con archivo PFISIN.TXT
+12/07-10:50:56: **START SPOOLER**
+12/07-10:50:56: A abrir COM1
+12/07-10:50:56: Comando completado: *
+12/07-10:50:56: Comando completado: *
+12/07-10:50:56: Comando completado: D| |0.0|C|0
+12/07-10:50:56: Comando completado: E
+12/07-10:50:56: Comando completado: J
+12/07-10:50:56: Enviando contenido de PFISIN.TXT
+12/07-10:50:56: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+12/07-10:50:56: Respuesta: 00800600
+12/07-10:50:56: Comando completado: @|A|T
+12/07-10:50:56: Respuesta: 008036001
+12/07-10:50:56: Comando completado: B|Servicio Tecnico|1.0|33.0|21.0|M|0.0|0|T
+12/07-10:50:56: Respuesta: 00803600
+12/07-10:50:56: Comando completado: A|pago 30 d°as|0
+12/07-10:50:56: Respuesta: 00803600
+12/07-10:50:56: Comando completado: C|P|Subtotal|0
+12/07-10:50:56: Respuesta: 00803600133.0005.7270.0000.0000.000
+12/07-10:50:56: Comando completado: D|Efectivo|33.0|T|0
+12/07-10:50:56: Respuesta: 00803600+0.00
+12/07-10:50:56: Comando completado: E
+12/07-10:50:56: Respuesta: 008006001
+12/07-10:50:56: Archivo PFISIN.TXT finalizado
+12/07-10:50:56: Dejando .\PFISIN.ans a disposici¢n del usuario
+12/07-10:50:56: Fin de la operaci¢n con archivo PFISIN.TXT
+12/07-10:54:48: **START SPOOLER**
+12/07-10:54:48: A abrir COM1
+12/07-10:54:48: Comando completado: *
+12/07-10:54:48: Comando completado: *
+12/07-10:54:48: Comando completado: D| |0.0|C|0
+12/07-10:54:48: Comando completado: E
+12/07-10:54:48: Comando completado: J
+12/07-10:54:48: Enviando contenido de PFISIN.TXT
+12/07-10:54:48: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+12/07-10:54:48: Respuesta: 00800600
+12/07-10:54:48: Comando completado: @|A|T
+12/07-10:54:48: Respuesta: 008036002
+12/07-10:54:48: Comando completado: B|Servicio Tecnico|1.0|33.0|21.0|M|0.0|0|T
+12/07-10:54:48: Respuesta: 00803600
+12/07-10:54:48: Comando completado: A| |0
+12/07-10:54:48: Respuesta: 00803600
+12/07-10:54:48: Comando completado: A|hdsgfhsdgfgsfj|0
+12/07-10:54:48: Respuesta: 00803600
+12/07-10:54:48: Comando completado: C|P|Subtotal|0
+12/07-10:54:48: Respuesta: 00803600133.0005.7270.0000.0000.000
+12/07-10:54:48: Comando completado: D|Efectivo|33.0|T|0
+12/07-10:54:48: Respuesta: 00803600+0.00
+12/07-10:54:48: Comando completado: E
+12/07-10:54:48: Respuesta: 008006002
+12/07-10:54:48: Archivo PFISIN.TXT finalizado
+12/07-10:54:48: Dejando .\PFISIN.ans a disposici¢n del usuario
+12/07-10:54:48: Fin de la operaci¢n con archivo PFISIN.TXT
+12/07-11:00:04: **START SPOOLER**
+12/07-11:00:04: A abrir COM1
+12/07-11:00:04: Comando completado: *
+12/07-11:00:04: Comando completado: *
+12/07-11:00:04: Comando completado: D| |0.0|C|0
+12/07-11:00:04: Comando completado: E
+12/07-11:00:04: Comando completado: J
+12/07-11:00:04: Enviando contenido de PFISIN.TXT
+12/07-11:00:04: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+12/07-11:00:04: Respuesta: 00800600
+12/07-11:00:04: Comando completado: ì|1|00000000
+12/07-11:00:04: Respuesta: 00800600
+12/07-11:00:04: Comando completado: Ä|R|T
+12/07-11:00:04: Respuesta: 008036002
+12/07-11:00:04: Comando completado: B|Mouse Inal†mbrico|1.0|50.0|21.0|M|0.0|0|T
+12/07-11:00:04: Respuesta: 00803600
+12/07-11:00:04: Comando completado: A| |0
+12/07-11:00:04: Respuesta: 00803600
+12/07-11:00:04: Comando completado: A|Devoluci¢n|0
+12/07-11:00:04: Respuesta: 00803600
+12/07-11:00:04: Comando completado: Å
+12/07-11:00:04: Respuesta: 008006002
+12/07-11:00:04: Archivo PFISIN.TXT finalizado
+12/07-11:00:04: Dejando .\PFISIN.ans a disposici¢n del usuario
+12/07-11:00:04: Fin de la operaci¢n con archivo PFISIN.TXT
+12/07-12:03:31: **START SPOOLER**
+12/07-12:03:31: A abrir COM1
+12/07-12:03:31: Comando completado: *
+12/07-12:03:31: Comando completado: *
+12/07-12:03:31: Comando completado: D| |0.0|C|0
+12/07-12:03:31: Comando completado: E
+12/07-12:03:31: Comando completado: J
+12/07-12:03:31: Enviando contenido de PFISIN.TXT
+12/07-12:03:31: Comando completado: b|Omicron SH|30711494592|I|C|Belgrano 87
+12/07-12:03:31: Respuesta: 00800600
+12/07-12:03:32: Comando completado: @|A|T
+12/07-12:03:32: Respuesta: 008036003
+12/07-12:03:32: Comando completado: B|Mouse Inal†mbrico|1.0|20.0|21.0|M|0.0|0|T
+12/07-12:03:32: Respuesta: 00803600
+12/07-12:03:32: Comando completado: B|Servicio Tecnico|1.0|30.0|21.0|M|0.0|0|T
+12/07-12:03:32: Respuesta: 00803600
+12/07-12:03:32: Comando completado: A| |0
+12/07-12:03:32: Respuesta: 00803600
+12/07-12:03:32: Comando completado: A|contado efectivo|0
+12/07-12:03:32: Respuesta: 00803600
+12/07-12:03:32: Comando completado: C|P|Subtotal|0
+12/07-12:03:32: Respuesta: 00803600250.0008.6780.0000.0000.000
+12/07-12:03:32: Comando completado: D|Efectivo|50.0|T|0
+12/07-12:03:32: Respuesta: 00803600+0.00
+12/07-12:03:32: Comando completado: E
+12/07-12:03:32: Respuesta: 008006003
+12/07-12:03:32: Archivo PFISIN.TXT finalizado
+12/07-12:03:32: Dejando .\PFISIN.ans a disposici¢n del usuario
+12/07-12:03:32: Fin de la operaci¢n con archivo PFISIN.TXT
+12/07-12:23:57: **START SPOOLER**
+12/07-12:23:57: A abrir COM1
+12/07-12:23:57: Comando completado: *
+12/07-12:23:57: Comando completado: *
+12/07-12:23:58: Comando completado: Y
+12/07-12:23:58: Respuesta: 00800600140711150521
+12/07-12:23:58: **START SPOOLER**
+12/07-12:23:58: A abrir COM1
+12/07-12:23:58: Comando completado: *
+12/07-12:23:58: Comando completado: *
+12/07-12:23:58: Comando completado: s
+12/07-12:23:58: Respuesta: 0080060030711494592Omicron SHPEL0012027080101000100000000000050801I
+12/07-12:32:12: **START SPOOLER**
+12/07-12:32:12: A abrir COM1
+12/07-12:32:18: Error de comunicaciones con la impresora, Rc -4
+12/07-12:32:19: **START SPOOLER**
+12/07-12:32:19: A abrir COM1
+12/07-12:32:25: Error de comunicaciones con la impresora, Rc -4
+15/07-12:37:01: **START SPOOLER**
+15/07-12:37:01: A abrir COM1
+15/07-12:37:07: Error de comunicaciones con la impresora, Rc -4
+15/07-12:37:07: **START SPOOLER**
+15/07-12:37:07: A abrir COM1
+15/07-12:37:13: Error de comunicaciones con la impresora, Rc -4
+23/07-10:50:44: **START SPOOLER**
+23/07-10:50:44: A abrir COM1
+23/07-10:50:50: Error de comunicaciones con la impresora, Rc -4
+23/07-10:50:50: **START SPOOLER**
+23/07-10:50:50: A abrir COM1
+23/07-10:50:56: Error de comunicaciones con la impresora, Rc -4
+23/07-10:55:57: **START SPOOLER**
+23/07-10:55:57: A abrir COM1
+23/07-10:56:03: Error de comunicaciones con la impresora, Rc -4
+23/07-10:56:03: **START SPOOLER**
+23/07-10:56:03: A abrir COM1
+23/07-10:56:09: Error de comunicaciones con la impresora, Rc -4
+23/07-10:58:36: **START SPOOLER**
+23/07-10:58:36: A abrir COM1
+23/07-10:58:42: Error de comunicaciones con la impresora, Rc -4
+23/07-11:02:53: **START SPOOLER**
+23/07-11:02:53: A abrir COM1
+23/07-11:02:59: Error de comunicaciones con la impresora, Rc -4
+23/07-11:03:46: **START SPOOLER**
+23/07-11:03:46: A abrir COM1
+23/07-11:03:52: Error de comunicaciones con la impresora, Rc -4
+23/07-11:04:15: **START SPOOLER**
+23/07-11:04:15: A abrir COM1
+23/07-11:04:21: Error de comunicaciones con la impresora, Rc -4
+11/08-11:58:14: **START SPOOLER**
+11/08-11:58:14: A abrir COM1
+11/08-11:58:14: No pude abrir COM1
+11/08-11:59:18: **START SPOOLER**
+11/08-11:59:18: A abrir COM1
+11/08-11:59:18: No pude abrir COM1
+11/08-11:59:42: **START SPOOLER**
+11/08-11:59:42: A abrir COM1
+11/08-11:59:42: No pude abrir COM1
+11/08-19:35:06: **START SPOOLER**
+11/08-19:35:06: A abrir COM1
+11/08-19:35:06: No pude abrir COM1
+13/08-10:14:32: **START SPOOLER**
+13/08-10:14:32: A abrir COM1
+13/08-10:14:32: No pude abrir COM1
+13/08-11:26:39: **START SPOOLER**
+13/08-11:26:39: A abrir COM1
+13/08-11:26:39: No pude abrir COM1
+13/08-11:30:53: **START SPOOLER**
+13/08-11:30:53: A abrir COM1
+13/08-11:30:53: No pude abrir COM1
+13/08-11:32:06: **START SPOOLER**
+13/08-11:32:06: A abrir COM1
+13/08-11:32:06: No pude abrir COM1
+13/08-11:32:09: **START SPOOLER**
+13/08-11:32:09: A abrir COM1
+13/08-11:32:09: No pude abrir COM1
+13/08-11:34:24: **START SPOOLER**
+13/08-11:34:24: A abrir COM1
+13/08-11:34:24: No pude abrir COM1
+13/08-11:34:26: **START SPOOLER**
+13/08-11:34:26: A abrir COM1
+13/08-11:34:26: No pude abrir COM1
+13/08-11:35:24: **START SPOOLER**
+13/08-11:35:24: A abrir COM1
+13/08-11:35:24: No pude abrir COM1
+13/08-11:35:25: **START SPOOLER**
+13/08-11:35:25: A abrir COM1
+13/08-11:35:25: No pude abrir COM1
+13/08-11:56:31: **START SPOOLER**
+13/08-11:56:31: A abrir COM1
+13/08-11:56:31: No pude abrir COM1
+13/08-11:56:34: **START SPOOLER**
+13/08-11:56:34: A abrir COM1
+13/08-11:56:34: No pude abrir COM1
+13/08-11:58:02: **START SPOOLER**
+13/08-11:58:02: A abrir COM1
+13/08-11:58:02: No pude abrir COM1
+13/08-11:58:04: **START SPOOLER**
+13/08-11:58:04: A abrir COM1
+13/08-11:58:04: No pude abrir COM1
+13/08-12:00:35: **START SPOOLER**
+13/08-12:00:35: A abrir COM1
+13/08-12:00:35: No pude abrir COM1
+13/08-12:00:37: **START SPOOLER**
+13/08-12:00:37: A abrir COM1
+13/08-12:00:37: No pude abrir COM1
+13/08-12:10:37: **START SPOOLER**
+13/08-12:10:37: A abrir COM1
+13/08-12:10:37: No pude abrir COM1
+13/08-12:11:28: **START SPOOLER**
+13/08-12:11:28: A abrir COM1
+13/08-12:11:28: No pude abrir COM1

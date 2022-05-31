@@ -1,0 +1,17 @@
+from entidades2 import *
+f1 = Factura()
+vv = SESSION.query(Vendedor).first()
+f1.vendedor = vv
+print f1.vendedor
+d1 = d_Factura(f1.id, 1, 1, 10.5, 10)
+f1.d_factura.append(d1)
+f1.d_factura.append(d1)
+f1.d_factura.append(d1)
+aa = copiarFactura12(f1)
+
+print aa
+print aa.d_factura
+print aa.id_vendedor
+
+#SESSION.add(aa)
+#SESSION.commit()

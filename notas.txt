@@ -1,0 +1,134 @@
+HASAR1.DatosCliente "Cliente...", "99999999995", TIPO_CUIT, RESPONSABLE_INSCRIPTO, _
+"Domicilio..."
+HASAR1.DocumentoDeReferencia(1) = "0001-00000001"
+HASAR1.AbrirDNFH NOTA_CREDITO_A
+HASAR1.ImprimirItem "Producto Uno", 1, 100, 21, 0
+HASAR1.CerrarDNFH 
+
+
+
+
+
+Ç∟R∟T
+ü
+ü
+Ç
+
+
+ü cerrar
+
+
+
+
+
+
+ÇST1∟
+b∟Omicron SH∟30711494592∟I∟C∟Lascala 732
+ô∟1∟ 
+Ç∟R∟T∟0
+
+
+  s = chr(98) + chr(28) + aimpre + chr(28)+ elcuit + chr(28)+ "I" + chr(28)+ "C" + chr(28)+ aimpre2
+
+   ThisForm.Olecontrol1.enviar(s)  
+
+ 
+
+   && Comprobante Original
+
+   s = chr(147) + chr(28) + "1" + chr(28)+ " "
+
+   ThisForm.Olecontrol1.enviar(s)  
+
+  
+
+   && Abre Nota de Credito A
+
+   s = chr(128) + chr(28) + "R" + chr(28)+ "T" + chr(28)+ "0"
+
+   ThisForm.Olecontrol1.enviar(s)  
+
+ 
+
+ELSE
+
+   Do Case
+
+      Case alltrim(ThisForm.Mytext9.Value) = "EXE"
+
+           x_tipo = "2"
+
+           x_resp = "E"
+
+      Case alltrim(ThisForm.Mytext9.Value) = "CF"
+
+           x_tipo = "2"
+
+           x_resp = "C"
+
+      Case alltrim(ThisForm.Mytext9.Value) = "MON"
+
+           x_tipo = "C"
+
+           x_resp = "M"
+
+      OTHERWISE
+
+           x_tipo = "2"
+
+           x_resp = "C"          
+
+   EndCase       
+
+   ThisForm.Olecontrol1.Preciobase = .F.
+
+  
+
+   && Datos del Cliente
+
+   s = chr(98) + chr(28) + aimpre + chr(28)+ elcuit + chr(28)+ x_resp + chr(28)+ x_tipo + chr(28)+ aimpre2
+
+   ThisForm.Olecontrol1.enviar(s)  
+
+ 
+
+   && Comprobante Original
+
+   s = chr(147) + chr(28) + "1" + chr(28)+ " "
+
+   ThisForm.Olecontrol1.enviar(s)  
+
+  
+
+   && Abre Nota de Credito B
+
+   s = chr(128) + chr(28) + "S" + chr(28)+ "T" + chr(28)+ "0"
+
+   ThisForm.Olecontrol1.enviar(s)  
+
+  
+
+ENDIF
+
+ 
+
+   SELECT itemcre
+
+   Scan
+
+     elprecio = ROUND(precio - ( precio * descuento / 100 ),2)
+
+     ThisForm.Olecontrol1.Imprimiritem (aimpre,cantidad,elprecio,alicuota,0)
+
+   EndScan
+
+ 
+
+ThisForm.Olecontrol1.SubTotal(.f.)
+
+ 
+
+ s = chr(129)
+
+ ThisForm.Olecontrol1.enviar(s)       
+

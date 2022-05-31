@@ -1,0 +1,21 @@
+import gui
+import wx
+import BuscarClienteDialog
+from sqlalchemy import *
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, backref
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, backref
+from sqlalchemy.orm import sessionmaker
+from entidades import *
+
+
+class BuscarClienteDialog (gui.BuscarDialog):
+    
+    def __init__( self, parent ):
+        gui.BuscarDialog.__init__( self, parent )
+        
+        
+    def m_OnButtonClickBuscar( self, event ):
+        print "Buscar"
+        event.Skip()        

@@ -1,0 +1,19 @@
+Gestion
+
+
+ABM Artículos
+- Artículos Compuestos
+
+
+Informes
+- Ctas.Ctes.
+
+
+Comprobantes 
+- Recibos 1 y 2
+- Facturas 1 y 2
+
+
+Stock 
+- ver como manejar 1 y 2
+

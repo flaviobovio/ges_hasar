@@ -1,0 +1,4 @@
+from entidades import * 
+a = Vendedor("Gatop", 2, True)
+from entidades2 import * 
+b = copiar (a, "Vendedor")

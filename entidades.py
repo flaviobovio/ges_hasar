@@ -1,0 +1,417 @@
+from sqlalchemy import *
+from sqlalchemy import Table, Column, Integer, ForeignKey
+from sqlalchemy.orm import relationship, backref
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+BASE = declarative_base()
+DATABASE = create_engine('sqlite:///database.db')
+DATABASE.echo = False
+METADATA = MetaData(DATABASE)
+SESSIONCLASS = sessionmaker(bind=DATABASE)
+SESSION = SESSIONCLASS()
+
+#
+#       COMUNES
+#
+
+
+
+
+class Vendedor(BASE):
+    __tablename__ = 'vendedores'
+    id = Column(Integer, primary_key=True)
+    nombre = Column(VARCHAR(15))
+    comision = Column(Float)
+    activo = Column(Boolean)
+    def __init__(self, nombre, comision, activo):
+        self.nombre = nombre
+        self.comision = comision
+        self.activo = activo
+    def __repr__(self):
+            return "<Vendedor('%s','%s','%s')>" % (self.nombre, self.comision, self.activo)
+
+
+class Tipo_Venta(BASE):
+    __tablename__ = 'tipos_venta'
+    id = Column(Integer, primary_key=True)
+    tipo = Column(VARCHAR(15))
+    cta_cte = Column(Boolean)
+    plazo = Column(Integer)
+    def __init__(self, tipo, cta_cte, plazo):
+        self.tipo = tipo
+        self.cta_cte = cta_cte
+        self.plazo = plazo
+    def __repr__(self):
+            return "<Tipo_Venta('%s','%s','%s')>" % (self.tipo, self.cta_cte, self.plazo)
+
+
+
+
+
+class Iva(BASE):
+    __tablename__ = 'iva'
+    id = Column(Integer, primary_key=True)
+    situacion = Column(VARCHAR(15))
+    abreviacion = Column(VARCHAR(1))
+    cuit = Column(Boolean)
+    discrimina = Column(Boolean)
+    comprobante = Column(VARCHAR(1))
+    def __init__(self, situacion, abreviacion, cuit, discrimina, comprobante):
+        self.situacion = situacion
+        self.abreviacion = abreviacion
+        self.cuit = cuit
+        self.discrimina = discrimina        
+        self.comprobante = comprobante
+    def __repr__(self):
+            return "<Iva('%s','%s','%s','%s','%s')>" % (self.situacion, self.abreviacion, self.cuit, self.discrimina, self.comprobante)
+
+
+
+
+class Cliente(BASE):
+    __tablename__ = 'clientes'
+    id = Column(Integer, primary_key=True)
+    cuenta = Column(VARCHAR(10))
+    razon = Column(VARCHAR(50))
+    cuit = Column(VARCHAR(11))
+    direccion = Column(VARCHAR(50))
+    localidad = Column(VARCHAR(50))
+    cp = Column(VARCHAR(8))
+    provincia = Column(VARCHAR(20))
+    id_iva = Column(Integer, ForeignKey('iva.id'))
+    telefono = Column(VARCHAR(50))
+    fax = Column(VARCHAR(50))
+    web = Column(VARCHAR(50))
+    email = Column(VARCHAR(50))
+    id_vendedor = Column(Integer, ForeignKey('vendedores.id'))
+    credito = Column(Float)
+    id_tipo_venta = Column(Integer,  ForeignKey('tipos_venta.id'))
+    observaciones = Column(VARCHAR(150))
+    fecha_alta = Column(Date)
+    activo = Column(Boolean)
+
+    iva = relationship("Iva")
+    vendedor = relationship("Vendedor")
+    tipo_venta = relationship("Tipo_Venta")
+    
+
+    def __init__(self, cuenta, razon, cuit, direccion, localidad, cp, provincia, id_iva, telefono, fax, web, email, id_vendedor, credito, id_tipo_venta, observaciones, fecha_alta, activo):
+        self.cuenta = cuenta
+        self.razon = razon
+        self.cuit = cuit
+        self.direccion = direccion
+        self.localidad = localidad
+        self.cp = cp
+        self.provincia = provincia
+        self.id_iva = id_iva
+        self.telefono = telefono
+        self.fax = fax
+        self.web = web
+        self.email = email
+        self.id_vendedor = id_vendedor
+        self.credito = credito
+        self.id_tipo_venta = id_tipo_venta
+        self.observaciones = observaciones
+        self.fecha_alta = fecha_alta
+        self.activo = activo
+    def __repr__(self):
+            return "<Cliente('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')>" % (self.cuenta, self.razon, self.cuit, self.direccion, self.localidad, self.cp, self.provincia, self.id_iva, self.telefono, self.fax, self.web, self.email, self.id_vendedor, self.credito, self.id_tipo_venta, self.observaciones, self.fecha_alta, self.activo)
+        
+class Proveedor(BASE):
+    __tablename__ = 'proveedores'
+    id = Column(Integer, primary_key=True)
+    cuenta = Column(VARCHAR(10))
+    razon = Column(VARCHAR(50))
+    cuit = Column(VARCHAR(11))
+    direccion = Column(VARCHAR(50))
+    localidad = Column(VARCHAR(50))
+    cp = Column(VARCHAR(8))
+    provincia = Column(VARCHAR(20))
+    id_iva = Column(Integer, ForeignKey('iva.id'))
+    telefono = Column(VARCHAR(50))
+    fax = Column(VARCHAR(50))
+    web = Column(VARCHAR(50))
+    email = Column(VARCHAR(50))
+    observaciones = Column(VARCHAR(150))
+    fecha_alta = Column(Date)
+    activo = Column(Boolean)
+
+    iva = relationship("Iva")
+    
+
+    def __init__(self, cuenta, razon, cuit, direccion, localidad, cp, provincia, id_iva, telefono, fax, web, email, observaciones, fecha_alta, activo):
+        self.cuenta = cuenta
+        self.razon = razon
+        self.cuit = cuit
+        self.direccion = direccion
+        self.localidad = localidad
+        self.cp = cp
+        self.provincia = provincia
+        self.id_iva = id_iva
+        self.telefono = telefono
+        self.fax = fax
+        self.web = web
+        self.email = email
+        self.observaciones = observaciones
+        self.fecha_alta = fecha_alta
+        self.activo = activo
+    def __repr__(self):
+            return "<Proveedor('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')>" % (self.cuenta, self.razon, self.cuit, self.direccion, self.localidad, self.cp, self.provincia, self.id_iva, self.telefono, self.fax, self.web, self.email, self.observaciones, self.fecha_alta, self.activo)        
+
+class Articulo(BASE):
+    __tablename__ = 'articulos'
+    id = Column(Integer, primary_key=True)
+    codigo = Column(VARCHAR(18))
+    codigoaux = Column(VARCHAR(18))
+    id_rubro = Column(Integer, ForeignKey('rubros.id'))  
+    id_unidad = Column(Integer, ForeignKey('unidades.id'))         
+    descripcion = Column(VARCHAR(50))
+    id_proveedor = Column(Integer, ForeignKey('proveedores.id'))
+    stock = Column(Float)
+    stockminimo = Column(Float)
+    redondeo = Column(Float)
+    p_costo = Column(Float)
+    margen = Column(Float)
+    t_iva = Column(Float)
+    p_venta = Column(Float)
+    reca_desc1 = Column(Float)
+    reca_desc2 = Column(Float)
+    reca_desc3 = Column(Float)
+    modificado = Column(Date)
+    activo = Column(Boolean)
+    
+    rubro = relationship("Rubro")    
+    unidad = relationship("Unidad")        
+    proveedor = relationship("Proveedor") 
+
+    def __init__(self, codigo, codigoaux, id_rubro, id_unidad, descripcion, id_proveedor, stock, stockminimo, redondeo, p_costo, margen, \
+        t_iva, p_venta, reca_desc1, reca_desc2, reca_desc3, modificado, activo):
+        self.codigo = codigo
+        self.codigoaux = codigoaux
+        self.id_rubro = id_rubro
+        self.id_unidad = id_unidad 
+        self.descripcion = descripcion
+        self.id_proveedor = id_proveedor
+        self.stock = stock
+        self.stockminimo = stockminimo
+        self.redondeo = redondeo
+        self.p_costo = p_costo
+        self.margen = margen
+        self.t_iva = t_iva
+        self.p_venta = p_venta
+        self.reca_desc1 = reca_desc1
+        self.reca_desc2 = reca_desc2
+        self.reca_desc3 = reca_desc3
+        self.modificado = modificado
+        self.activo = activo
+    def __repr__(self):
+            return "<articulo('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')>" \
+            % (self.codigo, self.codigoaux, self.id_rubro, self.id_unidad, self.descripcion, self.id_proveedor, self.stock, self.stockminimo, self.redondeo, \
+                self.p_costo, self.margen, self.t_iva, self.p_venta, self.reca_desc1, self.reca_desc2, self.reca_desc3, \
+                self.modificado, self.activo)
+
+class Rubro(BASE):
+    __tablename__ = 'rubros'
+    id = Column(Integer, primary_key=True)
+    rubro = Column(VARCHAR(20))
+    def __init__(self, rubro):
+        self.rubro = rubro
+    def __repr__(self):
+            return "<Rubro('%s')>" % (self.rubro)
+
+class Unidad(BASE):
+    __tablename__ = 'unidades'
+    id = Column(Integer, primary_key=True)
+    unidad = Column(VARCHAR(6))
+    decimales = Column(Integer)
+    
+    def __init__(self, unidad, decimales):
+        self.unidad = unidad
+        self.decimales = decimales
+    def __repr__(self):
+        return "<Unidad('%s','%s')>" % (self.unidad, self.decimales)
+
+class Tasas(BASE):
+    __tablename__ = 'tasas'
+    id = Column(Integer, primary_key=True)
+    tipo = Column(VARCHAR(10))
+    tasa = Column(Float)
+    def __init__(self, tipo, tasa):
+        self.tipo = tipo
+        self.tasa = tasa      
+    def __repr__(self):
+            return "<Tasas('%s','%s')>" % (self.tipo, self.tasa)
+
+
+#
+#       COMPROBANTES
+#
+
+class Factura(BASE):
+    __tablename__ = 'facturas'
+    id = Column(Integer, primary_key=True)
+    t_cpbte = Column(VARCHAR(1))
+    n_cpbte = Column(VARCHAR(12))
+    f_cpbte = Column(Date)
+    n_remito = Column(VARCHAR(12))
+    id_cliente = Column(Integer, ForeignKey('clientes.id'))
+    razon = Column(VARCHAR(50))
+    i_bruto = Column(Float)
+    i_descuento = Column(Float)
+    i_iva1 = Column(Float)    
+    i_iva2 = Column(Float)    
+    i_iva3 = Column(Float)        
+    i_neto = Column(Float)        
+    id_vendedor = Column(Integer, ForeignKey('vendedores.id'))
+    f_vencimiento = Column(Date)
+    estado = Column(VARCHAR(1))           
+    observaciones = Column(VARCHAR(50))
+    id_tipo_venta = Column(Integer,  ForeignKey('tipos_venta.id'))
+    d_factura = relationship("d_Factura", backref="Factura")    
+    cliente = relationship("Cliente") 
+    vendedor = relationship("Vendedor")
+    tipo_venta = relationship("Tipo_Venta")    
+
+    def __init__(self):
+        pass
+
+    def __repr__(self):
+            return "<Factura('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s', '%s')>" \
+            % (self.t_cpbte, self.n_cpbte, self.f_cpbte, self.n_remito, self.id_cliente, self.razon, \
+            self.i_bruto, self.i_descuento, self.i_iva1, self.i_iva2, self.i_iva3, self.i_neto, \
+            self.id_vendedor, self.f_vencimiento, self.estado, self.id_tipo_venta, self.observaciones)
+            
+            
+class d_Factura(BASE):
+    __tablename__ = 'd_facturas'
+    id = Column(Integer, primary_key=True)
+    id_factura = Column(Integer, ForeignKey('facturas.id'))      
+    id_articulo = Column(Integer, ForeignKey('articulos.id'))
+    cantidad = Column(Float)
+    t_iva = Column(Float)    
+    precio = Column(Float)   
+    articulo = relationship("Articulo")        
+
+
+    def __init__(self, id_factura, id_articulo, cantidad, t_iva, precio):
+        self.id_factura = id_factura
+        self.id_articulo = id_articulo
+        self.cantidad = cantidad
+        self.t_iva = t_iva 
+        self.precio = precio
+    def __repr__(self):
+            return "<d_Factura('%s','%s','%s','%s','%s')>" \
+            % (self.id_factura, self.id_articulo, self.cantidad, self.t_iva, self.precio )            
+
+
+
+class Notacr(BASE):
+    __tablename__ = 'notascr'
+    id = Column(Integer, primary_key=True)
+    t_cpbte = Column(VARCHAR(1))
+    n_cpbte = Column(VARCHAR(12))
+    f_cpbte = Column(Date)
+    n_remito = Column(VARCHAR(12))
+    id_cliente = Column(Integer, ForeignKey('clientes.id'))
+    razon = Column(VARCHAR(50))
+    i_bruto = Column(Float)
+    i_descuento = Column(Float)
+    i_iva1 = Column(Float)    
+    i_iva2 = Column(Float)    
+    i_iva3 = Column(Float)        
+    i_neto = Column(Float)        
+    id_vendedor = Column(Integer, ForeignKey('vendedores.id'))
+    f_vencimiento = Column(Date)
+    estado = Column(VARCHAR(1))           
+    observaciones = Column(VARCHAR(50))
+    id_tipo_venta = Column(Integer,  ForeignKey('tipos_venta.id'))
+    d_notacr = relationship("d_Notacr", backref="Notacr")    
+    cliente = relationship("Cliente") 
+    vendedor = relationship("Vendedor")
+    tipo_venta = relationship("Tipo_Venta")    
+
+    def __init__(self):
+        pass
+
+    def __repr__(self):
+            return "<Notacr('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')>" \
+            % (self.t_cpbte, self.n_cpbte, self.f_cpbte, self.n_remito, self.id_cliente, self.razon, \
+            self.i_bruto, self.i_descuento, self.i_iva1, self.i_iva2, self.i_iva3, self.i_neto, \
+            self.id_vendedor, self.f_vencimiento, self.estado, self.id_tipo_venta, self.observaciones)
+            
+            
+class d_Notacr(BASE):
+    __tablename__ = 'd_notascr'
+    id = Column(Integer, primary_key=True)
+    id_notacr = Column(Integer, ForeignKey('notascr.id'))      
+    id_articulo = Column(Integer, ForeignKey('articulos.id'))
+    cantidad = Column(Float)
+    t_iva = Column(Float)    
+    precio = Column(Float)   
+    articulo = relationship("Articulo")        
+
+
+    def __init__(self, id_notacr, id_articulo, cantidad, t_iva, precio):
+        self.id_notacr = id_notacr
+        self.id_articulo = id_articulo
+        self.cantidad = cantidad
+        self.t_iva = t_iva 
+        self.precio = precio
+    def __repr__(self):
+            return "<d_Notacr('%s','%s','%s','%s','%s')>" \
+            % (self.id_notacr, self.id_articulo, self.cantidad, self.t_iva, self.precio )            
+
+                      
+
+class Recibo(BASE):
+    __tablename__ = 'recibos'
+    id = Column(Integer, primary_key=True)
+    n_cpbte = Column(VARCHAR(12))
+    f_cpbte = Column(Date)
+    id_cliente = Column(Integer, ForeignKey('clientes.id'))
+    razon = Column(VARCHAR(50))
+    i_neto = Column(Float)        
+    d_recibo = relationship("d_Recibo", backref="Recibo")    
+    cliente = relationship("Cliente") 
+
+
+    def __init__(self):
+        pass
+
+    def __repr__(self):
+            return "<Recibo('%s','%s','%s','%s','%s')>" \
+            % (self.n_cpbte, self.f_cpbte, self.id_cliente, self.razon, self.i_neto )
+            
+
+class d_Recibo(BASE):
+    __tablename__ = 'd_recibos'
+    id = Column(Integer, primary_key=True)
+    id_recibo = Column(Integer, ForeignKey('recibos.id'))      
+    f_valor = Column(Date)    
+    numero = Column(VARCHAR(12))
+    banco = Column(VARCHAR(20))
+    plaza = Column(VARCHAR(30))
+    importe = Column(Float)
+
+
+    def __init__(self, id_recibo, f_valor, numero, banco, plaza, importe):
+        self.id_recibo = id_recibo
+        self.f_valor = f_valor
+        self.numero= numero
+        self.banco = banco
+        self.plaza = plaza
+        self.importe = importe
+        
+    def __repr__(self):
+            return "<d_Recibo('%s','%s','%s','%s','%s','%s')>" \
+            % (self.id_recibo, self.f_valor, self.numero, self.banco, self.plaza, self.importe)
+
+
+
+
+
+
+BASE.metadata.create_all(DATABASE)
+
+

@@ -1,0 +1,186 @@
+import gui
+import wx
+import sys
+import os
+from datetime import date, timedelta
+from entidades import *
+from Funciones import FechaDatePicker
+from wx import calendar
+
+
+class CerrarFacturaDialog ( gui.CerrarFacturaDialogBase):
+    
+    
+    m_Factura = None
+       
+   
+    def __init__( self, parent):
+        gui.CerrarFacturaDialogBase.__init__( self, parent )
+        
+        self.m_Factura = parent.m_Factura
+        
+        for row in SESSION.query(Vendedor):
+            self.m_comboBoxVendedor.Append(row.nombre, row)
+        for row in SESSION.query(Tipo_Venta):
+            self.m_comboBoxTipo_Venta.Append(row.tipo, row)
+
+
+        self.m_comboBoxTipo_Venta.SetStringSelection(self.m_Factura.cliente.tipo_venta.tipo)
+        self.m_comboBoxVendedor.SetStringSelection(self.m_Factura.cliente.vendedor.nombre)      
+        self.m_textCtrlPlazo.SetValue(str(self.m_Factura.cliente.tipo_venta.plazo))
+
+        self.m_datePickerF_Vencimiento.SetValue(FechaDatePicker(date.today() + timedelta(days=self.m_Factura.cliente.tipo_venta.plazo)))
+        self.m_staticTextI_Bruto.SetLabel(str("%.2f" % self.m_Factura.i_bruto).rjust(10))       
+        self.m_staticTextIva1.SetLabel("IVA 10.5%")
+        self.m_staticTextI_Iva1.SetLabel(str("%.2f" % self.m_Factura.i_iva1).rjust(10))
+        self.m_staticTextIva2.SetLabel("IVA 21.0%")        
+        self.m_staticTextI_Iva2.SetLabel(str("%.2f" % self.m_Factura.i_iva2).rjust(10))
+        self.m_staticTextI_Neto.SetLabel(str("%.2f" % self.m_Factura.i_neto).rjust(10))
+        self.m_bpButtonEmitir.SetFocus()
+        
+        
+        
+    def m_OnButtonEmitir( self, event ):
+        
+        #self.m_Factura.f_vencimiento = self.m_datePickerF_Vencimiento.GetValue().Format('%Y/%m/%d')
+        self.m_Factura.f_vencimiento = calendar._wxdate2pydate(self.m_datePickerF_Vencimiento.GetValue())
+        
+        print self.m_Factura.f_vencimiento
+
+        self.m_Factura.vendedor = self.m_comboBoxVendedor.GetClientData(self.m_comboBoxVendedor.GetSelection())
+        self.m_Factura.tipo_venta = self.m_comboBoxTipo_Venta.GetClientData(self.m_comboBoxTipo_Venta.GetSelection())        
+        
+        saveout = sys.stdout                  
+        fsock = open('pfisin.txt', 'w')                             
+        sys.stdout = fsock                                       
+        
+        #Encabezado
+        print "@PONEENCABEZADO||5|W W W . O M I C R O N - V T . C O M . A R"
+        sys.stdout.write("@FACTABRE|00001|F|C|")
+        sys.stdout.write(self.m_Factura.cliente.iva.comprobante) #Tipo Compbte
+        sys.stdout.write("|1|P|12|I|")
+        sys.stdout.write(self.m_Factura.cliente.iva.abreviacion + "|") #Sit.IVA
+        sys.stdout.write(self.m_Factura.razon + "|")    
+        sys.stdout.write(chr(127) + "|CUIT|")
+        sys.stdout.write(self.m_Factura.cliente.cuit+"|N|") 
+        sys.stdout.write(self.m_Factura.cliente.direccion + "|") 
+        sys.stdout.write(self.m_Factura.cliente.localidad + "|") 
+        sys.stdout.write("-|" + chr(127) + "\n")
+
+        #Detalle 
+        for item in self.m_Factura.d_factura:  
+            sys.stdout.write("@FACTITEM|00001|")
+            sys.stdout.write(item.articulo.descripcion + "|")
+            sys.stdout.write(str(int(item.cantidad*1000)).zfill(8) + "|")
+            if self.m_Factura.cliente.iva.discrimina:
+                pre = round (item.precio / (1+item.t_iva/100), 2)
+            else:
+                pre = item.precio
+            sys.stdout.write(str(int(pre*100)).zfill(9) + "|")
+            sys.stdout.write(str(int(item.t_iva*100)).zfill(4))
+            sys.stdout.write("|M|00001|00000000")            
+            sys.stdout.write("| |" + chr(127) + "|" + chr(127) + "|0000" "\n")
+
+        #Pie
+        print "@FACTPAGO|00001|Pago|000000001|T"
+        print "@FACTCIERRA|00001|F|A|FINAL"
+
+        sys.stdout = saveout                    
+        fsock.close()
+
+        os.system("del PFISOUT.TXT")
+        os.system("PFBATCH")
+
+
+        file = open("PFISOUT.TXT")
+        lineas = file.readlines()
+        numero = "0001" + lineas[6][46:54]
+        file.close()
+        self.m_Factura.n_cpbte = numero
+        self.m_Factura.estado = "F"
+
+
+        
+        SESSION.add(self.m_Factura)
+        SESSION.commit()        
+        
+        self.Destroy()
+
+    def m_OnButtonClickGuardar( self, event ):
+        self.Emitir2()
+
+        
+
+
+    def Emitir2( self ):
+        
+        self.m_Factura.f_vencimiento = self.m_datePickerF_Vencimiento.GetValue().Format('%Y/%m/%d')
+        self.m_Factura.id_vendedor = self.m_comboBoxVendedor.GetClientData(self.m_comboBoxVendedor.GetSelection()).id
+        self.m_Factura.id_tipo_venta = self.m_comboBoxTipo_Venta.GetClientData(self.m_comboBoxTipo_Venta.GetSelection()).id
+        self.m_Factura.id_cliente = self.m_Factura.cliente.id
+        
+        
+        #Encabezado
+        #print "@PONEENCABEZADO||5|W W W . O M I C R O N - V T . C O M . A R"
+        #sys.stdout.write("@FACTABRE|00001|F|C|")
+        #sys.stdout.write(self.m_Factura.cliente.iva.comprobante) #Tipo Compbte
+        #sys.stdout.write("|1|P|12|I|")
+        #sys.stdout.write(self.m_Factura.cliente.iva.abreviacion + "|") #Sit.IVA
+        #sys.stdout.write(self.m_Factura.razon + "|")    
+        #sys.stdout.write(chr(127) + "|CUIT|")
+        #sys.stdout.write(self.m_Factura.cliente.cuit+"|N|") 
+        #sys.stdout.write(self.m_Factura.cliente.direccion + "|") 
+        #sys.stdout.write(self.m_Factura.cliente.localidad + "|") 
+        #sys.stdout.write("-|" + chr(127) + "\n")
+
+        #Detalle 
+        #for item in self.m_Factura.d_factura:  
+        #    sys.stdout.write("@FACTITEM|00001|")
+        #    sys.stdout.write(item.articulo.descripcion + "|")
+        #    sys.stdout.write(str(int(item.cantidad*1000)).zfill(8) + "|")
+        #    if self.m_Factura.cliente.iva.discrimina:
+        #        pre = round (item.precio / (1+item.t_iva/100), 2)
+        #    else:
+        #        pre = item.precio
+        #    sys.stdout.write(str(int(pre*100)).zfill(9) + "|")
+        #    sys.stdout.write(str(int(item.t_iva*100)).zfill(4))
+        #    sys.stdout.write("|M|00001|00000000")            
+        #    sys.stdout.write("| |" + chr(127) + "|" + chr(127) + "|0000" "\n")
+
+        #Pie
+        #print "@FACTPAGO|00001|Pago|000000001|T"
+        #print "@FACTCIERRA|00001|F|A|FINAL"
+        from entidades2 import *
+        
+
+        numero = SESSION.query(func.max(Factura2.n_cpbte)).first()[0]
+        print numero
+        self.m_Factura.n_cpbte = "000" + str(int(numero)+1)
+        self.m_Factura.estado = "F"
+
+
+        fac2 = copiarFactura12(self.m_Factura)
+
+
+       
+        SESSION.add(fac2)
+        SESSION.commit()        
+        
+        from entidades import *
+        
+        
+        self.Destroy()
+
+
+
+        
+        
+
+    
+    def m_OnButtonClickCancelar( self, event ):
+        self.Destroy()
+        
+        
+
+
+

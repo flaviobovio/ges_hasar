@@ -1,0 +1,9 @@
+bOmicron SH30711494592ICBelgrano 87
+@AT
+BMouse Inal mbrico1.020.021.0M0.00T
+BServicio Tecnico1.030.021.0M0.00T
+A 0
+Acontado efectivo0
+CPSubtotal0
+DEfectivo50.0T0
+E

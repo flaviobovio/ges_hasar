@@ -1,0 +1,22 @@
+from wxPython.wx import *
+from wxPython.grid import *
+
+if __name__ == '__main__':
+   app = wxPySimpleApp()
+   f = wxFrame(None, -1, 'simple app')
+   f.Show(true)
+
+   g = wxGrid(f, -1)
+   g.CreateGrid(5, 5)
+   g.Show(true)
+
+   editor = wxGridCellNumberEditor()
+   renderer = wxGridCellNumberRenderer()
+
+   attr = wxGridCellAttr()
+   attr.SetEditor(editor)
+   attr.SetRenderer(renderer)
+   g.SetColAttr(0, attr)
+
+   app.MainLoop()
+
